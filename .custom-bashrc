@@ -1,0 +1,13 @@
+## Brian's custom config
+
+if shopt -q login_shell; then
+  # e.g. settting the PATH once in a login shell is enough
+  # node is required by nvim for markdown setup
+  PATH=~/bin:~/local_installations/go1.24.3/go/bin:~/local_installations/node-v22.16.0-linux-x64/bin:$PATH:
+  # Set up fzf key bindings and fuzzy completion
+  eval "$(~/bin/fzf --bash)"
+  # For good bineractive shell theme
+  eval "$(~/bin/starship init bash)"
+
+  alias vim=nvim
+fi
