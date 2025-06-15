@@ -52,7 +52,8 @@ Ctrl+Shift+c v      # Ghosty terminal copy & paste, different due to conflicts
 ## Terminal & normal editor commands
 Ctrl + a|e          # ONLY TERM: Go to start or end of line
 Ctrl + arrows       # Jump workds
-Ctrl + Home|End     # First line or last line
+Ctrl + Home|End     # First line or last line (Also helps with selection)
+Shift + {|}         # Select block upwards or downwards
 
 ## Fzf
 ctrl + r|t            # command search | search files
@@ -63,7 +64,7 @@ ctrl + r|t            # command search | search files
 
 ```bash
 tmux | tmux attach # create a new session or attach to existing
-<leader> c|1|2|3|n|p   # Create a new window, go to window number or next or previous window
+<leader> c|1|2|3|n|p   # Create a new window, go to num or next/previous
 <leader> | -           # Cozfigured: Create new panes horizontally or vertically
 <leader> hjkl          # Configured: switch between panes
 <leader> Arrows        # Configured: change size of panes

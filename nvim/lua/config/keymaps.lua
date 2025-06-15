@@ -24,8 +24,11 @@ vim.keymap.set("n", "<leader>pn", function()
   vim.notify("Copied: " .. vim.fn.expand("%:t"), vim.log.levels.INFO)
 end, { desc = "Copy file name to clipboard" })
 
--- Diffview plugin keybindings
--- Open Diffview for all changes (e.g., uncommitted changes)
+-- Diffview & Vim-fugitive plugin keybindings
 vim.keymap.set("n", "<leader>gvo", "<Cmd>DiffviewOpen<CR>", { desc = "Diffview: Open All Diffs" })
--- Close the Diffview window
 vim.keymap.set("n", "<leader>gvc", "<Cmd>DiffviewClose<CR>", { desc = "Diffview: Close" })
+vim.keymap.set("n", "<leader>gvb", "<Cmd>Git blame<CR>", { desc = "Fugitive: blame file" })
+vim.keymap.set("n", "<leader>gvd", "<Cmd>Gvdiffsplit<CR>", { desc = "Fugitive: git diff file" })
+
+-- Keybinding to remove whitespaces from file
+vim.keymap.set("n", "<leader>cw", [[:%s/\s\+$//e<CR>]], { desc = "Remove Trailing Whitespace" })

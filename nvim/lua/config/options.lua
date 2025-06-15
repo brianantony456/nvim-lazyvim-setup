@@ -10,3 +10,5 @@ vim.opt.conceallevel = 0
 vim.opt.clipboard = "unnamedplus"
 -- Set winbar shows file path, helps with splits
 vim.opt.winbar = "%=%m %f"
+-- Don't autoformat on save
+vim.g.autoformat = false
