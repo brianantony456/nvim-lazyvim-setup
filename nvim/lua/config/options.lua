@@ -12,3 +12,5 @@ vim.opt.clipboard = "unnamedplus"
 vim.opt.winbar = "%=%m %f"
 -- Don't autoformat on save
 vim.g.autoformat = false
+-- Turn off swapfile
+vim.opt.swapfile = false
