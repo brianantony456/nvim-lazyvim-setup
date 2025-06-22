@@ -19,7 +19,7 @@ Additional requirements: node, gcc, go, fd, rg, fzf installed
 1. Cleanup files, also check which kde, for office .local.kde5
 
 ```bash
-rm -rf ~/.config/nvim/ ~/.local/share/nvim/ ~/.local/state/nvim/ ~/.cache/nvim/
+rm ~/.config/nvim; rm -rf ~/.local/share/nvim/ ~/.local/state/nvim/ ~/.cache/nvim/
 rm -rf ~/.config.kde5/nvim/ ~/.local.kde5/share/nvim/ ~/.local.kde5/state/nvim/ ~/.cache.kde5/nvim/
 ```
 

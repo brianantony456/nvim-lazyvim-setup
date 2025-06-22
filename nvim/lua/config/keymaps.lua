@@ -1,8 +1,8 @@
 -- Keymaps are automatically loaded on the VeryLazy event
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
---
---
+
+
 -- Custom: Get path keymaps
 local function copy_path_to_clipboard(path_type)
   local path = vim.fn.expand(path_type)
@@ -19,7 +19,7 @@ vim.keymap.set("n", "<leader>go", "<Cmd>DiffviewOpen<CR>", { desc = "Diffview: O
 vim.keymap.set("n", "<leader>gc", "<Cmd>DiffviewClose<CR>", { desc = "Diffview: Close all diffs" })
 
 -- Keybinding to remove whitespaces from file
-vim.keymap.set("n", "<leader>cw", [[:%s/\s\+$//e<CR>]], { desc = "Remove Trailing Whitespace" })
+vim.keymap.set("n", "<leader>cw", [[:%s/\s\+$//e<bar>:%s/\n\n\+$//e<CR>]], { desc = "Clean Whitespace and Extra Newlines" })
 
--- Keybinding to whitespaces from file 
+-- Keybinding to whitespaces from file
 vim.keymap.set("n", "<leader>cK", vim.lsp.buf.hover, { desc = "LSP: Hover Documentation" })
