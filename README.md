@@ -12,15 +12,18 @@ Setup with `setup.sh`
 - Htop - for process management
 - Nerd fonts (Jetbrains mono)
 
-## LazyVim setup
+  ## LazyVim setup
 
 Additional requirements: node, gcc, go, fd, rg, fzf installed
 
 1. Cleanup files, also check which kde, for office .local.kde5
 
 ```bash
-rm ~/.config/nvim; rm -rf ~/.local/share/nvim/ ~/.local/state/nvim/ ~/.cache/nvim/
-rm -rf ~/.config.kde5/nvim/ ~/.local.kde5/share/nvim/ ~/.local.kde5/state/nvim/ ~/.cache.kde5/nvim/
+rm ~/.config/nvim
+rm -rf ~/.local/share/nvim/ ~/.local/state/nvim/ ~/.cache/nvim/
+
+rm -f ~/.config.kde5/nvim
+rm -rf ~/.local.kde5/share/nvim/ ~/.local.kde5/state/nvim/ ~/.cache.kde5/nvim/
 ```
 
 1. Install necessary [software](https://www.lazyvim.org/) & install LazyVim
@@ -41,6 +44,12 @@ Host <alias>
   SetEnv TERM=xterm-256color
   IdentityFile <private key path>
 ```
+
+# TODO fixes
+
+Items to fix
+
+- Try installing default plugins so that there is less config
 
 ## FAQ
 

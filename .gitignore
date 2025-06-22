@@ -1,0 +1,24 @@
+__pycache__
+.coverage
+.ipynb_checkpoints
+.cache
+.mypy_cache
+.pytest_cache
+
+# Non-public source
+minimum/cluster
+misc/*.py
+misc/*.cpp
+misc/extra
+vision/surveillance_camera.cpp
+vision/vision_demo.cpp
+
+# Non-public stuff for boundvariable.
+misc/boundvariable/codex.out
+misc/boundvariable/log/
+misc/boundvariable/program.out
+misc/boundvariable/program.umz
+misc/boundvariable/tmp/
+
+# Generated files.
+htmlcov

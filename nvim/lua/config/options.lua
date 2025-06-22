@@ -38,3 +38,31 @@ opt.autoindent = true -- copy indent from current line when starting new one
 -- line numbers
 opt.relativenumber = true -- show relative line numbers
 opt.number = true -- shows absolute line number on cursor line (when relative number is on)
+--
+--
+-- vim.g.ale_linters_explicit = 1
+-- vim.g.ale_use_neovim_diagnostics_api = 1
+-- vim.g.ale_virtualtext_cursor = "disabled"
+-- vim.g.ale_linters = {
+--   apkbuild = { "apkbuild_lint" },
+--   -- TODO: https://github.com/kisielk/errcheck
+--   go = { "gopls", "gofmt", "gofumpt", "staticcheck", "govet", "golangci-lint" },
+--   mail = { "proselint" },
+--   markdown = { "marksman", "vale" },
+-- }
+-- vim.g.ale_fixers = {
+--   go = { "gofumpt" },
+--   html = { "prettier" },
+--   json = { "prettier" },
+--   lua = { "stylua" },
+--   markdown = { "prettier" }, -- Disables trim_whitespace. See: https://github.com/dense-analysis/ale/discussions/4640
+--   scss = { "prettier" },
+--   sql = { "pgformatter" },
+--   typescript = { "prettier" },
+--   vue = { "prettier" },
+--   yaml = { "prettier" },
+--   ruby = { "rubocop" },
+--   python = { "ruff" },
+--   bazel = { "buildifier" },
+--   ["*"] = { "remove_trailing_lines", "trim_whitespace" },
+-- }

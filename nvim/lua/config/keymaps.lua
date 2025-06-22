@@ -21,5 +21,5 @@ vim.keymap.set("n", "<leader>gc", "<Cmd>DiffviewClose<CR>", { desc = "Diffview: 
 -- Keybinding to remove whitespaces from file
 vim.keymap.set("n", "<leader>cw", [[:%s/\s\+$//e<bar>:%s/\n\n\+$//e<CR>]], { desc = "Clean Whitespace and Extra Newlines" })
 
--- Keybinding to whitespaces from file
-vim.keymap.set("n", "<leader>cK", vim.lsp.buf.hover, { desc = "LSP: Hover Documentation" })
+-- Ctrs+s doesn't save file in tmux hence save it with <leader>bs
+vim.keymap.set('n', '<leader>bs', '<Cmd> w <CR>', {desc = "Save current buffer"}) -- Remap Ctrl+s to save
