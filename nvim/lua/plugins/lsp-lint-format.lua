@@ -7,6 +7,7 @@ return {
     opts = {
       ensure_installed = {
         "buildifier",  -- for bazel
+        "debugpy", -- required by nvim-dap-python plugin
         "gofumpt", -- for go like fmt but stricter
         "gopls",
         "goimports",
